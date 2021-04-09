@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>dsc.gg Electron</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">dsc.gg Electron</h1>
+      <form id="createlink">
+        <div class="field">
+          <label class="label">API Key</label>
+          <p class="control has-icons-left">
+            <input class="input" type="password" placeholder="API Key">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>        
+        </div>
+          <label class="label">Slug</label>
+          <div class="control">
+            <input class="input" required="true" id="slug" placeholder="Slug">
+          </div>
+        </div>
+  <label class="label">Type</label>
+  <div class="control">
+    <input class="input" id="type" placeholder="Type EX: server,bot, template">
+  </div>
+</div>
+<label class="label">Redirect</label>
+<div class="control">
+  <input class="input" id="redirect" placeholder="Redirect URL">
+</div>
+</div>
+        <div class="control">
+        <button class="button is-link is-light" id="submit">Create Link</button>
+        </div>
+      </form>
+      </div>
+      <div class="box">
+        <label id="link"><b>Link:</b><br></label>
+      </div>
+    <script src="render.js"></script>
+  </body>
+</html>
